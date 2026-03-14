@@ -1,0 +1,31 @@
+plugins {
+    id 'application'
+    id 'org.springframework.boot' version '3.4.3'
+    id 'io.spring.dependency-management' version '1.1.7'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Spring Web — to expose metrics endpoint
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Kafka — for consuming messages
+    implementation 'org.springframework.kafka:spring-kafka'
+
+    // Actuator + Prometheus — for Grafana
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'io.micrometer:micrometer-registry-prometheus'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+application {
+    mainClass = 'org.example.App'
+}
