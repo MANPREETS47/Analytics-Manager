@@ -1,4 +1,4 @@
-# 🖱️ Kafka Button Analytics
+# 🖱️ Analytics Manager
 
 A real-world **microservices** project built with **Apache Kafka** and **Spring Boot** that tracks button click events in real time. Demonstrates the Producer/Consumer messaging pattern using two completely independent services communicating only through Kafka.
 
