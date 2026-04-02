@@ -15,7 +15,7 @@ Every time a user clicks a button on a webpage:
 5. **Grafana** visualizes the click count in real time
 
 ```
-[Browser Button] → [Producer Service] → [Kafka] → [Consumer Service] → [Prometheus] → [Grafana]
+
 ```
 
 ---
